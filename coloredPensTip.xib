@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="coloredPensTip" customModule="focusfriend" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="0Ga-Mk-d0n" id="wqC-EK-Ypl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="use colored pens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQt-95-ek1">
+                    <rect key="frame" x="34.5" y="94" width="345.5" height="60"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DN1-Px-2TS">
+                    <rect key="frame" x="35" y="164" width="344" height="119.5"/>
+                    <string key="text">You've mentioned that you like to use colored pens to stay focused.  Colored pens are useful as they help your thoughts remain organized.  This prevents mental exhaustion and distraction.  </string>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ga-Mk-d0n">
+                    <rect key="frame" x="40" y="483.5" width="334" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Bd1-2R-YNd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                    <state key="normal" title="Colored Pens Organizer">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="tap:" destination="-1" eventType="touchUpInside" id="CzC-sk-Hmf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.54602091774490646" blue="0.46102104161914514" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="FQt-95-ek1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3xb-bw-g4H"/>
+                <constraint firstItem="FQt-95-ek1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="8RS-A4-FWQ"/>
+                <constraint firstItem="DN1-Px-2TS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FUc-yo-RRf"/>
+                <constraint firstItem="DN1-Px-2TS" firstAttribute="top" secondItem="FQt-95-ek1" secondAttribute="bottom" constant="10" id="Hgp-5r-iT2"/>
+                <constraint firstItem="DN1-Px-2TS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="Lo3-1V-wVt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0Ga-Mk-d0n" secondAttribute="trailing" constant="40" id="OEb-rg-xyF"/>
+                <constraint firstAttribute="trailing" secondItem="DN1-Px-2TS" secondAttribute="trailing" constant="35" id="QUG-RY-JYM"/>
+                <constraint firstItem="0Ga-Mk-d0n" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Sw1-nK-6de"/>
+                <constraint firstItem="0Ga-Mk-d0n" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="iP3-j2-dkG"/>
+                <constraint firstItem="0Ga-Mk-d0n" firstAttribute="top" secondItem="DN1-Px-2TS" secondAttribute="bottom" constant="200" id="xWD-h2-Q9Y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="139"/>
+        </view>
+    </objects>
+</document>

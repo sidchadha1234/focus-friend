@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="noNearbyDeviceTip" customModule="focusfriend" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="11z-vj-LdA" id="zmL-9L-uSh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hide nearby devices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwe-3Z-6dG">
+                    <rect key="frame" x="45" y="94" width="324" height="48"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvb-EC-NAg">
+                    <rect key="frame" x="40" y="152" width="334" height="191"/>
+                    <string key="text">If you have any other devices nearby that may cause any distractions please hide them from sight.  In fact, it's better to store these devices at a location that's as far away possible from your study setting.  If the device you are using right now is distracting, use the link below to temporarily disable your notifications. </string>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11z-vj-LdA">
+                    <rect key="frame" x="60" y="512" width="294" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-settings-30" translatesAutoresizingMaskIntoConstraints="NO" id="JdH-w3-5vB">
+                            <rect key="frame" x="30" y="7.5" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="bon-xe-Ro8"/>
+                                <constraint firstAttribute="height" constant="35" id="hjn-a2-bsv"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="go to settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Set-fM-wAP">
+                            <rect key="frame" x="102" y="10" width="137.5" height="30"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="JdH-w3-5vB" firstAttribute="centerY" secondItem="11z-vj-LdA" secondAttribute="centerY" id="4Ih-Rk-taA"/>
+                        <constraint firstAttribute="trailing" secondItem="Set-fM-wAP" secondAttribute="trailing" constant="54.5" id="8VI-Xm-Jug"/>
+                        <constraint firstItem="Set-fM-wAP" firstAttribute="centerY" secondItem="11z-vj-LdA" secondAttribute="centerY" id="8yS-iu-gTu"/>
+                        <constraint firstAttribute="height" constant="50" id="XQi-Ac-kCA"/>
+                        <constraint firstItem="Set-fM-wAP" firstAttribute="leading" secondItem="JdH-w3-5vB" secondAttribute="trailing" constant="37" id="Xy6-oE-16Z"/>
+                        <constraint firstItem="JdH-w3-5vB" firstAttribute="leading" secondItem="11z-vj-LdA" secondAttribute="leading" constant="30" id="f2G-ty-wWt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tvb-EC-NAg" firstAttribute="top" secondItem="Wwe-3Z-6dG" secondAttribute="bottom" constant="10" id="0Pp-H5-EKR"/>
+                <constraint firstItem="tvb-EC-NAg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="5yr-Ln-Cmp"/>
+                <constraint firstItem="tvb-EC-NAg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="As3-fa-M0n"/>
+                <constraint firstItem="11z-vj-LdA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="GMO-XO-DgT"/>
+                <constraint firstAttribute="trailing" secondItem="tvb-EC-NAg" secondAttribute="trailing" constant="40" id="KtK-sK-wOo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="11z-vj-LdA" secondAttribute="trailing" constant="60" id="RPC-je-6Ye"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="11z-vj-LdA" secondAttribute="bottom" constant="300" id="Z8m-px-ggc"/>
+                <constraint firstItem="Wwe-3Z-6dG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eRa-pg-9g8"/>
+                <constraint firstItem="11z-vj-LdA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mM5-7E-u9m"/>
+                <constraint firstItem="Wwe-3Z-6dG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="rLb-yg-qvG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icons8-settings-30" width="30" height="30"/>
+    </resources>
+</document>
